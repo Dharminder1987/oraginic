@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-body{margin: 0px; padding: 0px;}
+body{margin: 0px; padding: 0px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+h1,h2,h3,h4,h5,h6{ margin:0px; padding: 0px;}
+img{ max-width: 100%;}
+li{ list-style:none; margin: 0px; padding: 0px;}
 .left{float: left;}
 .right{float:right;}
+.clear{ clear: both;}
 .container{ width: 1000px; margin: 0 auto;}
+.mid_container{ float: left; width: 100%; padding: 50px 0;}
+.mid_container h1{ font-size: 50px; color: #9cc618; text-align: center;}

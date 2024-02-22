@@ -1,4 +1,27 @@
 <div id="product">
-    <div id="home_banner"> <div class="banner_con"><div class="left"><img src="assets/images/bnr-productimg.png"></div></div></div>
-    <div class="container"> product works!</div>
+    <div id="home_banner">
+        <div class="banner_con">
+            <div class="banner_img"><img src="assets/images/bnr-productimg.png"></div>
+            <div class="banner_text">
+                <span>{{bannerData.subtitle}}</span>
+                <h2>{{bannerData.title}}</h2>
+                <p>{{bannerData.desc}}</p>
+                <a routerLink="/cart" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="mid_container">
+        <div class="container">
+            <h1>Best Selling Products</h1>
+            <div class="product_list">
+                <ul>
+                    <li *ngFor="let pro_list of products"> <img [src]="pro_list.image">
+                        <h4><a routerLink="/cart">{{pro_list.name}}</a></h4>
+                        <span>{{pro_list.price}}</span>
+                        <a routerLink="/cart" class="btn">Shop Now</a>
+                    </li>
+         </ul>
+            </div>
+        </div>
+    </div>
 </div>
