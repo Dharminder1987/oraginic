@@ -1,1 +1,15 @@
-<p>about</p>
+<div id="inner_banner"><img src="assets/images/juiceimg.jpg"></div>
+<div class="mid_container">
+    <div class="about_container" *ngFor="let AboutUs of aboutData">
+        <h1>About</h1>
+        <div class="spacer"></div>
+        <img [src]="AboutUs.image1">
+        <div class="spacer"></div>
+        <h3>{{AboutUs.title1}}</h3>
+        <p>{{AboutUs.para1}}</p>
+        <br><br><br>
+        <h3>{{AboutUs.title2}}</h3><br><img [src]="AboutUs.image2"><br><br>
+        <h3>{{AboutUs.title3}}</h3>
+        <p>{{AboutUs.para2}}</p>
+    </div>
+    </div>

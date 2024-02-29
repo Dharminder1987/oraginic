@@ -6,7 +6,7 @@
                 <span>{{bannerData.subtitle}}</span>
                 <h2>{{bannerData.title}}</h2>
                 <p>{{bannerData.desc}}</p>
-                <a routerLink="/cart" class="btn">Shop Now</a>
+                <a routerLink="/cart" class="btn_revers">Shop Now</a>
             </div>
         </div>
     </div>
@@ -15,13 +15,22 @@
             <h1>Best Selling Products</h1>
             <div class="product_list">
                 <ul>
-                    <li *ngFor="let pro_list of products"> <img [src]="pro_list.image">
+                    <li *ngFor="let pro_list of products"><a routerLink="/cart"><img [src]="pro_list.image"></a>
                         <h4><a routerLink="/cart">{{pro_list.name}}</a></h4>
-                        <span>{{pro_list.price}}</span>
+                        <span>Rs.{{pro_list.price}}</span><br><br>
                         <a routerLink="/cart" class="btn">Shop Now</a>
                     </li>
-         </ul>
+                </ul>
+            </div>
+            <div class="mid_con">
+                <div class="banner_img"><a routerLink="/cart"><img src="assets/images/fruitimg.jpg"></a></div>
+                <div class="banner_text">
+                    <h3>{{viewMoreData.title}}</h3>
+                    <p>{{viewMoreData.description}}</p>
+                    <a routerLink="/cart" class="btn_revers">View More</a>
+                </div>
             </div>
         </div>
+
     </div>
 </div>

@@ -38,4 +38,11 @@ export class ProductListComponent {
       title: 'Join The Organic Movement!',
       desc: 'Best expert product reviews guide, tech news and expert product articles and customer reviews & consumer-oriented research to help you find the best products for your needs',
   };
+
+  viewMoreData: { title:string, description:string } = {
+    title: 'Farm Fresh Fruits',
+    description: 'Global Car Shipping Ltd is a fully registered company in the United Kingdom. With many years of expertise in the shipping and air freight industries, we specialise in vehicle and container shipping as well as the export of personal items/cargo to worldwide destinations.',
+
+  };
+
 }

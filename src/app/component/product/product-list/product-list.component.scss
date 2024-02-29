@@ -5,11 +5,9 @@
 .banner_text{ float: left; width: 55%; padding: 0 0 0 30px;}
 .banner_text span{ font-size: 23px; color: #8caf1c;}
 .banner_text h2{ font-size: 56px; color: #000; margin: 20px 0;}
-.banner_text p{color: #323232; font-size: 17px; margin-bottom: 30px; }
-.banner_text .btn{ padding: 8px 20px; text-decoration: none; font-size: 18px; color: #fff; background-color: #9cc618; border-radius: 3px;}
-.banner_text .btn:hover{ background-color: #323232;}
-.product_list{ width: 100%; margin-top: 30px;}
-.product_list ul{ width: 100%; margin: 0px; padding: 0px;}
-.product_list ul li{margin: 10px; padding: 0px; display:inline-block; text-align: center; }
-.product_list ul li img{ margin-bottom: 5px;}
-.product_list ul li a{ color: #000; font-size: 16px; text-decoration:none;}
+.banner_text h3{ font-size: 50px; color: #000; margin: 20px 0;}
+
+.banner_text p{color: #323232; font-size: 17px; line-height: 25px; margin-bottom: 30px; }
+.banner_text .btn{ padding: 8px 20px; text-decoration: none; font-size: 18px; color: #fff; background-color: #333; border-radius: 3px;}
+.banner_text .btn:hover{ background-color: #8caf1c;}
+

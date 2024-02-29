@@ -1,1 +1,17 @@
-<p>groceries works!</p>
+<div id="inner_banner"><img src="assets/images/juiceimg.jpg"></div>
+<div class="mid_container">
+    <div class="container">
+        <h1>Groceries</h1>
+        <div class="products_list">
+            <ul>
+                <li *ngFor = 'let groceriesList of groceries'>
+                    <img [src]="groceriesList.image">
+                    <h4>{{groceriesList.title}}</h4>
+                    <span>Price: £{{groceriesList.price}}</span>
+                    <div class="spacer"></div>
+                    <a routerLink="/cart" class="btn">Shop Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>

@@ -1,0 +1,16 @@
+<div id="inner_banner"><img src="assets/images/juiceimg.jpg"></div>
+<div class="mid_container">
+    <div class="container">
+        <h1>Shop</h1>
+        <div class="product_list">
+            <ul>
+                <li *ngFor="let shopList of shopProduct"><a routerLink="/cart"><img [src]="shopList.image"></a><br>
+                    <span class="cat">{{shopList.Category1}}</span><br>
+                    <h4><a routerLink="/cart">{{shopList.title}}</a></h4>
+                     <span>Price: £{{shopList.price}}</span><br><br>
+                    <a routerLink="/cart" class="btn">Shop Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>

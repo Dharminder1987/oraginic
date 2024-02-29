@@ -1,1 +1,53 @@
-<p>contact works!</p>
+<div id="inner_banner"><img src="assets/images/juiceimg.jpg"></div>
+
+<div class="mid_container">
+  <div class="contact_container">
+    <h1>Contact</h1>
+    <div class="contactInfo">
+      </div>
+    <div class="contact_form">
+      <form [formGroup]="contactForm" (ngSubmit)="handleSubmit($event)">
+        <input type="text"
+               ngNativeValidate
+               [class.is-invalid]="field['name'].invalid && field['name'].touched"
+               name="name"
+               formControlName="name"
+               placeholder="Enter your full name"
+               required="">
+
+        <input type="text"
+               ngNativeValidate
+               [class.is-invalid]="field['email'].invalid && field['email'].touched"
+               name="email"
+               formControlName="email"
+               placeholder="Enter your Email"
+               required="">
+
+        <input type="text"
+               ngNativeValidate
+               [class.is-invalid]="field['phone'].invalid && field['phone'].touched"
+               name="phone"
+               formControlName="phone"
+               placeholder="Enter your Phone"
+               required="">
+
+        <input type="text"
+               ngNativeValidate
+               [class.is-invalid]="field['subject'].invalid && field['subject'].touched"
+               name="subject"
+               formControlName="subject"
+               placeholder="Subject"
+               required="">
+
+        <textarea id="textarea_comp-jxbkb4z4"
+                  ngNativeValidate
+                  [class.is-invalid]="field['message'].invalid && field['message'].touched"
+                  formControlName="message"
+                  placeholder="Message"
+                  required=""></textarea>
+
+        <button type="submit" value="Submit">SEND</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,11 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+
 body{margin: 0px; padding: 0px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 h1,h2,h3,h4,h5,h6{ margin:0px; padding: 0px;}
+p{ line-height: 25px;font-size: 18px; color: #5f5f5f;}
 img{ max-width: 100%;}
 li{ list-style:none; margin: 0px; padding: 0px;}
 .left{float: left;}
 .right{float:right;}
 .clear{ clear: both;}
+.center{ text-align: center;}
 .container{ width: 1000px; margin: 0 auto;}
 .mid_container{ float: left; width: 100%; padding: 50px 0;}
 .mid_container h1{ font-size: 50px; color: #9cc618; text-align: center;}
+.mid_container h2{ font-size: 45px; color: #000;}
+.spacer{ width: 100%; height: 30px;}
+
+#inner_banner{ width: 100%;}
+#inner_banner img{ background-size: cover;  height: 250px; width: 100%;}
+
+.products_list{ width: 100%; margin-top: 30px;}
+.products_list ul{ width: 100%; margin: 0px; padding: 0px;}
+.products_list ul li{margin: 0px 40px 50px 40px; width: 240px; padding: 0px; display:inline-block; text-align: center; }
+.products_list ul li h4{ margin: 10px 0;}
+.products_list ul li span{ margin: 10px 0; font-size: 14px;}
+.products_list ul li p{ font-size: 15px; line-height: 20px;}
+.products_list ul li a{ color: #000; font-size: 16px; text-decoration:none;}
+.products_list ul li a:hover{ color: #8caf1c;}
+.btn{padding: 8px 15px; text-decoration: none; font-size: 18px; color: #fff!important; background-color: #6b6b6b; border-radius: 3px;}
+.btn:hover{ background-color: #404040;}
+.btn_revers{padding: 8px 15px; text-decoration: none; font-size: 18px; color: #fff!important; background-color: #8caf1c; border-radius: 3px;}
+.btn_revers:hover{ background-color: #333;}
+
+.product_list{ width: 100%; margin-top: 30px;}
+.product_list ul{ width: 100%; margin: 0px; padding: 0px;}
+.product_list ul li{margin: 8px 8px 50px 8px; padding: 0px; display:inline-block; text-align: center; }
+.product_list ul li img{ margin-bottom: 5px; max-width: 232px; clear: both;}
+.product_list ul li h4{ margin: 10px 0;}
+.product_list ul li span{ margin: 10px 0;}
+.product_list ul li a{ color: #000; font-size: 16px; text-decoration:none;}
+.product_list ul li a:hover{ color: #8caf1c;}
+.product_list ul li .cat{ font-size: 14px; clear: both; color: #a4a4a4;;}
+.mid_con{ float: left; width: 100%; margin: 60px 0 0 0;}
