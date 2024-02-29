@@ -17,7 +17,7 @@ export const routes: Routes = [
     { path: 'about', component:AboutComponent  },
     { path: 'contact', component:ContactComponent  },
     { path: 'shop', component:ShopComponent},
-    { path: 'cart', component:CartComponent  },
+    { path: 'cart/:id', component:CartComponent  },
     { path: 'myaccount', component:MyAccountComponent},
     { path: '**', component:PageNotFoundComponent  },
     

@@ -12,9 +12,10 @@ import { RouterLink } from '@angular/router';
 export class GroceriesComponent {
   groceries: any[] = [
     {
+      id: 1,
       image: 'assets/images/groceries1.jpg',
       title: 'Diabetic Cookies',
-      price:'25.00',
+      price: 25.00,
     },
     {
       image: 'assets/images/groceries2.jpg',
