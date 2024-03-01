@@ -2,6 +2,59 @@
 .logo{ float: left;}
 .top_menu{ float:right;}
 .top_menu ul{ margin: 0px; padding: 0px;}
-.top_menu ul li{ margin: 0px 10px; padding: 0px; list-style: none; display: inline;}
-.top_menu ul li a{line-height: 75px; text-transform: uppercase; text-decoration: none; font-size: 14px; color: #000; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+.top_menu ul li{ margin: 0px 15px; padding: 0px; list-style: none; display: inline;}
+.top_menu ul li a{line-height: 75px;  text-decoration: none; font-size: 14px; color: #000; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 .top_menu ul li a:hover{ color: #a9cd37;}
+.top_search{ float: left; margin: 22px 0 0 200px;}
+.top_search input{border: 1px solid #bebebe; width: 200px; padding: 10px;}
+.top_search button{border: 1px solid #fff;margin-left: -35px; background-color: #fff; cursor: pointer; padding: 8px;}
+
+/* Style the dropdown container */
+.dropdown {
+    position: relative;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 8px 0;
+    min-width: 160px;
+    z-index: 1;
+}
+.top_menu ul li ul li a{line-height: 25px; }
+.top_menu ul li ul li{ display: inline; margin: 0px;}
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown::after {
+    content: '';
+    position: absolute;
+    top: 70%;
+    right: -10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #333;
+}

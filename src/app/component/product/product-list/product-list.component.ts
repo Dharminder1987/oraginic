@@ -12,24 +12,28 @@ import { RouterLink } from '@angular/router';
 export class ProductListComponent {
   products: any[] = [
     {
+      id: 1,
       image: 'assets/images/product1.jpg',
       name: 'Assorted Coffee',
-      price: 10.99
+      price: 10.99,
     },
     {
+      id: 2,
       image: 'assets/images/product2.jpg',
       name: 'Hand Sanitizer',
-      price: 20.49
+      price: 20.49,
     },
     {
+      id: 3,
       image: 'assets/images/product3.jpg',
       name: 'Handpicked Red Chillies',
-      price: 15.75
+      price: 15.75,
     },
     {
+      id: 4,
       image: 'assets/images/product4.jpg',
       name: 'Organic Face Scrub',
-      price: 15.75
+      price: 15.75,
     }
   ];
 
@@ -41,7 +45,7 @@ export class ProductListComponent {
 
   viewMoreData: { title:string, description:string } = {
     title: 'Farm Fresh Fruits',
-    description: 'Global Car Shipping Ltd is a fully registered company in the United Kingdom. With many years of expertise in the shipping and air freight industries, we specialise in vehicle and container shipping as well as the export of personal items/cargo to worldwide destinations.',
+    description: 'Global Car Shipping Ltd is a fully registered company in the United Kingdom. With many years of expertise in the shipping and air freight industries, we  in vehicle and container shipping as well as the export of personal items/cargo to worldwide destinations.',
 
   };
 
